@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anzaldo Autopartes</title>
+    <link rel="icon" type="image/png" href="../rsc/logo.png">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body>
+
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+
+    <header>
+        <div class="logo">
+            <a href="#inicio">
+                <img src="../rsc/logo.png" alt="Anzaldo Autopartes" class="logo-img">
+            </a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#inicio" class="hover-target">Inicio</a></li>
+                <li><a href="#marcas" class="hover-target">Marcas</a></li>
+                <li><a href="#productos" class="hover-target">Productos</a></li>
+                <li><a href="#contacto" class="hover-target">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-slideshow">
+            <div class="slide-img active" style="background-image: url('rsc/motor.jpeg');"></div>
+            <div class="slide-img" style="background-image: url('rsc/suspension.jpeg');"></div>
+            <div class="slide-img" style="background-image: url('rsc/interior.jpeg');"></div>
+        </div>
+        
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Anzaldo Autopartes</h1>
+            <p>Encuentra la pieza exacta que tu vehículo necesita con la garantía y confianza de Anzaldo Autopartes.</p>
+            <a href="https://wa.me/3331189981" class="btn hover-target">Contáctanos</a>
+        </div>
+    </section>
+
+    <section id="marcas" class="brands-section">
+        <h3 class="brands-title">Manejamos las mejores marcas</h3>
+        <div class="slider hover-target">
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/ford.png" alt="Ford">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/chevrolet.png" alt="Chevrolet">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/peugeot.png" alt="Peugeot">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/renault.png" alt="Renault">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/mg.png" alt="MG">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/jac.png" alt="JAC">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/mazda.png" alt="Mazda">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/toyota.png" alt="Toyota">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/volkswagen.png" alt="Volkswagen">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/mercedes.png" alt="Mercedes">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/honda.png" alt="Honda">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/bmw.png" alt="BMW">
+                </div>
+            </div>
+            <div class="slide">
+                <div class="brand-logo">
+                    <img src="../rsc/nissan.png" alt="Nissan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="container">
+        <h2 class="section-title">Nuestras Categorías</h2>
+        <div class="products-grid">
+            <div class="card scroll-reveal">
+                <div class="card-img" style="--bg-card: #1e293b;">⚙️</div>
+                <div class="card-content">
+                    <h3>Motor</h3>
+                    <p>Pistones, válvulas, bandas y todo para el corazón de tu auto.</p>
+                    <a href="#" class="card-btn hover-target">Ver más <span class="arrow-icon">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card scroll-reveal">
+                <div class="card-img" style="--bg-card: #f59e0b;">⚡</div>
+                <div class="card-content">
+                    <h3>Eléctrico</h3>
+                    <p>Baterías, alternadores, marchas y sensores de alta precisión.</p>
+                    <a href="#" class="card-btn hover-target">Ver más <span class="arrow-icon">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card scroll-reveal">
+                <div class="card-img" style="--bg-card: #b91c1c;">🛑</div>
+                <div class="card-content">
+                    <h3>Frenos</h3>
+                    <p>Balatas, discos y líquidos para garantizar tu seguridad.</p>
+                    <a href="#" class="card-btn hover-target">Ver más <span class="arrow-icon">&rarr;</span></a>
+                </div>
+            </div>
+
+            <div class="card scroll-reveal">
+                <div class="card-img" style="--bg-card: #0f766e;">🚗</div>
+                <div class="card-content">
+                    <h3>Suspensión</h3>
+                    <p>Amortiguadores, horquillas y rótulas para un manejo suave.</p>
+                    <a href="#" class="card-btn hover-target">Ver más <span class="arrow-icon">&rarr;</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contacto" class="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Anzaldo Autopartes</h3>
+                <p>Líderes en el mercado de autopartes en la ciudad, 5 años de experiencia, garantía más que nada.</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p class="hover-target">📍 Calle Gante #684, Colonia San Carlos, Guadalajara, Jalisco, C.P. 44460</p>
+                <p class="hover-target">📞 +52 (333) 118-9981</p>
+                <p class="hover-target">✉️ autopartesanzaldo@gmail.com</p>
+            </div>
+
+            <div>
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/anzaldopartes" target="_blank" class="social-icon hover-target">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/autopartesanzaldo/" target="_blank" class="social-icon hover-target">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/3331189981" target="_blank" class="social-icon hover-target">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Horario</h3>
+                <p>Lun - Vie: 9:30 AM - 6:00 PM</p>
+                <p>Sáb: 9:30 AM - 3:00 PM</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Anzaldo Autopartes. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        // 1. LOGICA DEL CURSOR PERSONALIZADO
+        const cursorDot = document.getElementById('cursor-dot');
+        const cursorOutline = document.getElementById('cursor-outline');
+        
+        // Mover el cursor
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            // El punto se mueve instantáneamente
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            // El contorno se mueve con un ligero retraso (crea el efecto fluido)
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // Efecto Hover del Cursor sobre elementos interactivos
+        // He añadido la clase 'hover-target' a los enlaces y botones en el HTML
+        const hoverTargets = document.querySelectorAll('.hover-target, a, button, .card');
+
+        hoverTargets.forEach(target => {
+            target.addEventListener('mouseenter', () => {
+                cursorOutline.classList.add('cursor-hover');
+            });
+            target.addEventListener('mouseleave', () => {
+                cursorOutline.classList.remove('cursor-hover');
+            });
+        });
+
+
+        // 2. Funcionalidad Menú Móvil
+        function toggleMenu() {
+            const nav = document.getElementById('nav-list');
+            nav.classList.toggle('active');
+        }
+
+        // 3. Animación al hacer Scroll (Intersection Observer)
+        const observerOptions = { threshold: 0.2 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Lógica del Slideshow del Hero
+        const slides = document.querySelectorAll('.slide-img');
+        let currentSlide = 0;
+
+        function nextSlide() {
+            // Quita la clase active de la imagen actual
+            slides[currentSlide].classList.remove('active');
+            
+            // Pasa a la siguiente (y vuelve a la primera si llega al final)
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Añade la clase active a la nueva imagen
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Cambia la imagen cada 5000ms (5 segundos)
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
