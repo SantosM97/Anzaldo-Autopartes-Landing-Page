@@ -361,11 +361,48 @@ nav ul li a:hover::after {
 }
 
 /* Ajuste para que los títulos del footer sean consistentes */
+/* Mejora del texto base del footer */
+.footer p, .footer li {
+    color: #94a3b8; /* Gris suave inicial */
+    transition: all 0.3s ease;
+    margin-bottom: 0.8rem;
+    display: block; /* Para que la animación de movimiento funcione bien */
+}
+
+/* EFECTO HOVER: Resaltar texto al pasar el mouse */
+.footer p:hover, .footer li:hover {
+    color: var(--text-light); /* Blanco puro */
+    transform: translateX(8px); /* Se desplaza un poco a la derecha */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3); /* Un pequeño brillo */
+}
+
+/* Resaltar específicamente los datos de contacto con el color de la marca */
+.footer .contact-item:hover {
+    color: var(--accent-color); /* Rojo al pasar el mouse */
+}
+
+/* Animación para los Títulos del Footer */
 .footer h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Línea decorativa debajo de los títulos que crece al pasar el mouse */
+.footer h3::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: var(--accent-color);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+}
+
+.footer div:hover h3::after {
+    width: 60px; /* La línea se alarga cuando interactúas con esa sección */
 }
 
 .footer { background-color: var(--primary-color); color: white; padding: 3rem 2rem; text-align: center; }
@@ -389,3 +426,4 @@ nav ul li a:hover::after {
     nav ul { position: absolute; top: 60px; left: 0; width: 100%; background-color: var(--primary-color); flex-direction: column; align-items: center; padding: 2rem 0; gap: 1.5rem; transform: translateY(-150%); transition: transform 0.4s ease; }
     nav ul.active { transform: translateY(0); }
 }
+
